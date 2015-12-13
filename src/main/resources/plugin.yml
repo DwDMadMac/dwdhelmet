@@ -1,0 +1,5 @@
+name: ${project.artifactId}
+main: ${project.groupId}.Main
+version: ${project.version}
+description: ${project.artifactId} Bukkit Plugin
+author: DwDMadMac
