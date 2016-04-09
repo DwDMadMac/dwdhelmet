@@ -12,7 +12,7 @@ public enum Lang {
     ERROR_COMMAND_NO_PERMISSION("&4[&7DwD&4] &4You do not have permission to use /helmet!"),
     ERROR_COMMAND_OTHERS_NO_PERMISSION("&4[&7DwD&4] &4You do not have permission to alter other players helmets!"),
     ERROR_ONLY_PLAYERS_COMMAND("&4[&7DwD&4] &4Only players can use helmets!"),
-    ERROR_TARGET_NOT_FOUND("&4[&7DwD&4] &4That player can not be found!"),
+    ERROR_TARGET_NOT_FOUND("&4[&7DwD&4] &4Sorry, that player can not be found!"),
     ERROR_TARGET_INVENTORY_FULL("&4[&7DwD&4] &4Your inventory is full, can not remove helmet!"),
     ERROR_EMPTY_HAND("&4[&7DwD&4] &4Nothing in your hand to place as a helmet!"),
 
@@ -21,10 +21,9 @@ public enum Lang {
     HELMET_REMOVED("&4[&7DwD&4] &6Your helmet was removed"),
     HELMET_SET("&4[&7DwD&4] &6You set a custom helmet!");
 
-    private final String def;
-
     private static File configFile;
     private static FileConfiguration config;
+    private final String def;
 
     Lang(String def) {
         this.def = def;
