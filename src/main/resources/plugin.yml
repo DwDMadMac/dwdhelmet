@@ -3,3 +3,8 @@ main: ${project.groupId}.Main
 version: ${project.version}
 description: ${project.artifactId} Bukkit Plugin
 author: DwDMadMac
+
+commands:
+    helemt:
+        usage: /<command> [player]
+        description: Set a custom helmet that is in your hand.

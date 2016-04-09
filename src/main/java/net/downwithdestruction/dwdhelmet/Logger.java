@@ -15,7 +15,7 @@ public class Logger {
 
     public static void debug(String msg) {
         if (Config.DEBUG_MODE.getBoolean()) {
-            Logger.log("&7[&eDEBUG&7]&e " + msg);
+                Logger.log("&7[&eDEBUG&7]&e " + msg);
         }
     }
 
@@ -27,7 +27,7 @@ public class Logger {
         Logger.log("&e[&4ERROR&e]&4 " + msg);
     }
 
-    public static void info(String msg) {
+    static void info(String msg) {
         Logger.log("&e[&fINFO&e]&r " + msg);
     }
 }
