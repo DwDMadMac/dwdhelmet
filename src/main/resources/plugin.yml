@@ -5,6 +5,11 @@ description: ${project.artifactId} Bukkit Plugin
 author: DwDMadMac
 
 commands:
-    helemt:
+    helmet:
         usage: /<command> [player]
-        description: Set a custom helmet that is in your hand.
+        description: Set your/a players custom helmet that is in your hand.
+
+permissions:
+    command.helmet:
+        description: Gives a player permission to set a custom helmet with an item in your hand.
+        default: op
