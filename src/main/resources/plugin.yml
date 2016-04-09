@@ -1,7 +1,7 @@
 name: ${project.artifactId}
 main: ${project.groupId}.Main
 version: ${project.version}
-description: ${project.artifactId} Bukkit Plugin
+description: ${project.artifactId} Bukkit/Spigot Plugin
 author: DwDMadMac
 
 commands:
