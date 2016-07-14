@@ -1,7 +1,7 @@
 name: ${project.artifactId}
 main: ${project.groupId}.Main
 version: ${project.version}
-description: ${project.artifactId} Bukkit/Spigot Plugin
+description: ${project.artifactId} allows you to place any block as your head.
 author: DwDMadMac
 
 commands:
