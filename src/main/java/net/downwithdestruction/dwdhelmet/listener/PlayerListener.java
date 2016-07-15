@@ -27,6 +27,8 @@ public class PlayerListener implements Listener {
 
         ItemStack customHelmet = player.getInventory().getHelmet();
 
+        if (customHelmet == null) { return; }
+
         if (    /*player.getInventory().getHelmet().equals(Material.DIAMOND_HELMET) ||
                 player.getInventory().getHelmet().equals(Material.CHAINMAIL_HELMET) ||
                 player.getInventory().getHelmet().equals(Material.GOLD_HELMET) ||
