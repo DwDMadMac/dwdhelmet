@@ -1,5 +1,5 @@
 name: ${project.artifactId}
-main: ${project.groupId}.Main
+main: ${project.groupId}.DwDHelmet
 version: ${project.version}
 description: ${project.artifactId} replaces your head with almost any block you want.
 author: DwDMadMac

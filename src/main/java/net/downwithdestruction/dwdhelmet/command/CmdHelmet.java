@@ -1,6 +1,6 @@
 package net.downwithdestruction.dwdhelmet.command;
 
-import net.downwithdestruction.dwdhelmet.Main;
+import net.downwithdestruction.dwdhelmet.DwDHelmet;
 import net.downwithdestruction.dwdhelmet.configuration.Lang;
 import net.downwithdestruction.dwdhelmet.manager.ChatManager;
 import org.bukkit.Bukkit;
@@ -21,9 +21,9 @@ import java.util.stream.Collectors;
  */
 
 public class CmdHelmet implements TabExecutor {
-    private Main plugin;
+    private DwDHelmet plugin;
 
-    public CmdHelmet(Main plugin) {
+    public CmdHelmet(DwDHelmet plugin) {
         this.plugin = plugin;
     }
 

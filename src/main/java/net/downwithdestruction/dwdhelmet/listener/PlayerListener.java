@@ -1,7 +1,7 @@
 package net.downwithdestruction.dwdhelmet.listener;
 
 import net.downwithdestruction.dwdhelmet.Logger;
-import net.downwithdestruction.dwdhelmet.Main;
+import net.downwithdestruction.dwdhelmet.DwDHelmet;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -15,9 +15,9 @@ import org.bukkit.inventory.ItemStack;
  *
  */
 public class PlayerListener implements Listener {
-    private Main plugin;
+    private DwDHelmet plugin;
 
-    public PlayerListener(Main plugin) {
+    public PlayerListener(DwDHelmet plugin) {
         this.plugin = plugin;
     }
 
@@ -37,7 +37,7 @@ public class PlayerListener implements Listener {
                 (customHelmet.getType().equals(Material.DIAMOND_HELMET)) ||
                 (customHelmet.getType().equals(Material.DIAMOND_HELMET)) ||
                 (customHelmet.getType().equals(Material.CHAINMAIL_HELMET)) ||
-                (customHelmet.getType().equals(Material.GOLD_HELMET)) ||
+                (customHelmet.getType().equals(Material.GOLDEN_HELMET)) ||
                 (customHelmet.getType().equals(Material.IRON_HELMET)) ||
                 (customHelmet.getType().equals(Material.LEATHER_HELMET)) ){
             Logger.debug(

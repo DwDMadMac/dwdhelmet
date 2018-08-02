@@ -1,17 +1,17 @@
 package net.downwithdestruction.dwdhelmet.configuration;
 
-import net.downwithdestruction.dwdhelmet.Main;
+import net.downwithdestruction.dwdhelmet.DwDHelmet;
 
 public enum Config {
     COLOR_LOGS(true),
     DEBUG_MODE(false),
     LANGUAGE_FILE("lang-en.yml");
 
-    private final Main plugin;
+    private final DwDHelmet plugin;
     private final Object def;
 
     Config(Object def) {
-        this.plugin = Main.getPlugin(Main.class);
+        this.plugin = DwDHelmet.getPlugin(DwDHelmet.class);
         this.def = def;
     }
 
@@ -28,6 +28,6 @@ public enum Config {
     }
 
     public static void reload() {
-        Main.getPlugin(Main.class).reloadConfig();
+        DwDHelmet.getPlugin(DwDHelmet.class).reloadConfig();
     }
 }

@@ -1,7 +1,7 @@
 package net.downwithdestruction.dwdhelmet.configuration;
 
+import net.downwithdestruction.dwdhelmet.DwDHelmet;
 import net.downwithdestruction.dwdhelmet.Logger;
-import net.downwithdestruction.dwdhelmet.Main;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -38,9 +38,9 @@ public enum Lang {
         if (configFile == null || force) {
             String lang = Config.LANGUAGE_FILE.getString();
             Logger.debug("Loading language file: " + lang);
-            configFile = new File(Main.getPlugin(Main.class).getDataFolder(), lang);
+            configFile = new File(DwDHelmet.getPlugin(DwDHelmet.class).getDataFolder(), lang);
             if (!configFile.exists()) {
-                Main.getPlugin(Main.class).saveResource(Config.LANGUAGE_FILE.getString(), false);
+                DwDHelmet.getPlugin(DwDHelmet.class).saveResource(Config.LANGUAGE_FILE.getString(), false);
             }
         }
         config = YamlConfiguration.loadConfiguration(configFile);
