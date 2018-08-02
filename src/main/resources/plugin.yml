@@ -13,3 +13,9 @@ permissions:
     command.helmet:
         description: Gives a player permission to set a custom helmet with an item in your hand.
         default: op
+    command.helmet.exempt:
+        description: Excempts a player from having their helmet placed by others.
+        default: op
+    command.helmet.others:
+        description: Gives a player permission to set a custom helmet with an item in your hand on other players.
+        default: op
